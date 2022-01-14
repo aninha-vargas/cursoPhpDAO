@@ -38,9 +38,15 @@
 	// echo $aluno;
 
 	// Alterando usuario no BD
+	// $usuario = new Usuario();
+	// $usuario->loadById(3);
+	// $usuario->update("professor", "a456");
+	// echo $usuario;
+
+	// Excluindo um usuário
 	$usuario = new Usuario();
-	$usuario->loadById(3);
-	$usuario->update("professor", "a456");
+	$usuario->loadById(7);
+	$usuario->delete();
 	echo $usuario;
 
  ?>
